@@ -9,99 +9,100 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.facci.restaurantdl.MainActivityDL"
     android:orientation="vertical"
-    >
-
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Restaurante DL"
-        android:id="@+id/tituloTV"
+        android:text="RestaurantDL"
+        android:id="@+id/textView"
+        android:layout_weight="0.05"
         android:layout_gravity="center_horizontal" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:rowCount="4"
-        android:columnCount="23">
+        android:columnCount="2"
+        android:rowCount="5">
+
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:id="@+id/imagen1IB"
+            android:id="@+id/imageButton1"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:src="@drawable/uno"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click1"/>
 
         <ImageButton
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen2IB"
+            android:id="@+id/imageButton2"
             android:layout_row="1"
             android:layout_column="0"
             android:src="@drawable/dos"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click2"/>
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen3IV"
+            android:id="@+id/imageView"
             android:layout_row="1"
             android:layout_column="1"
             android:src="@drawable/tres"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click3"/>
 
         <ImageButton
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen4IB"
+            android:id="@+id/imageButton3"
             android:layout_row="2"
             android:layout_column="0"
             android:src="@drawable/cuatro"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click4"/>
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen5IV"
+            android:id="@+id/imageView2"
             android:layout_row="2"
             android:layout_column="1"
             android:src="@drawable/cinco"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click5"/>
 
         <ImageButton
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen6IB"
+            android:id="@+id/imageButton4"
             android:layout_row="3"
             android:layout_column="0"
             android:src="@drawable/seis"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click6"/>
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:id="@+id/imagen7IV"
+            android:id="@+id/imageView3"
             android:layout_row="3"
             android:layout_column="1"
             android:src="@drawable/siete"
             android:scaleType="centerCrop"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:onClick="Click7"/>
     </GridLayout>
 </LinearLayout>
